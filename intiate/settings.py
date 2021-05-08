@@ -28,6 +28,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['tsfsimplebankingsystem.herokuapp.com','127.0.0.1']
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Application definition
 
@@ -125,4 +126,4 @@ STATICFILES_DIRS =[
     os.path.join(BASE_DIR,'statics')
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR,'assets')
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
